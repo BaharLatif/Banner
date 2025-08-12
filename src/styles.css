@@ -1,1 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+
+.container { max-width: 1200px; margin: 0 auto; padding-inline: 16px; margin-right: 65px; }
+.section { padding-block: 32px; }
+
