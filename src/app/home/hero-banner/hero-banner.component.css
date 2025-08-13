@@ -1,5 +1,5 @@
 
-.hero {
+ .hero {
     position: relative;
     width: 100%;
     min-height: 360px;
@@ -31,7 +31,6 @@
     opacity: .9;
   }
   
-
   .hero__cta {
     display: inline-block;
     padding: 12px 20px;
@@ -47,10 +46,24 @@
   .hero__cta:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0,0,0,.18); }
   
   
+  
    .hero::before {
     content: "";
     position: absolute; inset: 0;
     background: rgba(255,255,255,.0); 
     pointer-events: none;
   }  
-  
+    
+
+    
+ 
+.hero {
+  width: 100%;
+  min-height: 360px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: url('/assets/images/hero-banner-img.jpeg') center/cover no-repeat;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}

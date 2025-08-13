@@ -1,14 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+
+export interface Category {
+  title: string;
+  imageUrl: string;
+  link?: string;
+}
 
 @Component({
   selector: 'app-category-card',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './category-card.component.html',
   styleUrls: ['./category-card.component.css']
 })
 export class CategoryCardComponent {
-  // This component can be used to display individual category cards
-  // Add any necessary logic or properties here
-
+  @Input({required: true}) category!: Category;
 }
