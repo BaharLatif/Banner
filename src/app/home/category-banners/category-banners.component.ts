@@ -11,5 +11,6 @@ import { NgFor } from '@angular/common';
 })
 export class CategoryBannersComponent {
   @Input({ required: true }) items: Category[] = [];
-
 }
+
+

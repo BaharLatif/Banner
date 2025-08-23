@@ -21,3 +21,5 @@ export class CategoryCardComponent {
   trackClick(name:string){ console.log('Clicked', name); }
 
 }
+
+
