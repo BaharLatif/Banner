@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Category, CategoryCardComponent } from './category-card/category-card.component';
 import { NgFor } from '@angular/common';
 
@@ -10,11 +10,6 @@ import { NgFor } from '@angular/common';
   styleUrls: ['./category-banners.component.css']
 })
 export class CategoryBannersComponent {
-  categories : Category[] = [
-    {title: 'Women', imageUrl: 'assets/images/women.jpeg'},
-    {title: 'Men', imageUrl: 'assets/images/men.jpeg'},
-    {title: 'Kids', imageUrl: 'assets/images/kids.jpeg'},
-    {title: 'Pets', imageUrl: 'assets/images/pets.jpeg'}
-  ];
+  @Input({ required: true }) items: Category[] = [];
 
 }

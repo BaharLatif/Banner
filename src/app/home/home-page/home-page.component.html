@@ -1,8 +1,10 @@
 <section class="container section">
-  <app-hero-banner></app-hero-banner>
+  <app-hero-banner [title]="'Summer Glow Sale'"></app-hero-banner>
+  
 </section>
 
 <section class="container section">
   <h2 class="section-title">Shop by Category</h2>
-  <app-category-banners></app-category-banners>
+  <app-category-banners [items]="categories"></app-category-banners>
 </section>
+

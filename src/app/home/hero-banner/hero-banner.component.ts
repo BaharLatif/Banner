@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -9,5 +9,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './hero-banner.component.css'
 })
 export class HeroBannerComponent {
+  @Input() title = '';
+  @Input() bgUrl = '/assets/images/hero-banner-img.jpeg';
 
 }

@@ -1,5 +1,13 @@
 <div class="card">
-    <img *ngIf="category.imageUrl" [src]="category.imageUrl" [alt]="category.title">
     <h3>{{ category.title }}</h3>
+    <a class="card" (click)="trackClick(category.title)" [routerLink]="category.link">
+      <div class="thumb-box" *ngIf="category.imageUrl">
+        <img class="thumb" [src]="category.imageUrl" [alt]="category.title">
+      </div>
+      <h3 class="title">{{ category.title }}</h3>
+    </a>
   </div>
+  
+
+ 
   
